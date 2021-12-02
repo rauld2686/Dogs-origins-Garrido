@@ -1,0 +1,692 @@
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(multimedia/fondoo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sup {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.sup .navbar-nav .nav-item a {
+  color: black;
+}
+.sup .navbar-toggler-icon {
+  background-image: url(multimedia/pawtr.png);
+}
+
+.carou {
+  z-index: 11;
+  width: 60%;
+  margin-top: 155px;
+  margin-left: 20%;
+}
+.carou .carousel-slide {
+  z-index: 11;
+}
+.carou .carousel-item {
+  height: 500px;
+}
+.carou .carousel-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.histo {
+  border: none;
+  margin-top: 30px;
+}
+.histo h2 {
+  text-align: center;
+  color: maroon;
+  font-family: cursive;
+  font-style: oblique;
+}
+.histo h3 {
+  color: maroon;
+  font-family: cursive;
+  font-style: oblique;
+}
+.histo p {
+  font-family: sans-serif;
+  text-align: justify;
+}
+.histo .imagenTogo img {
+  display: block;
+  margin: auto;
+  width: 400px;
+  height: auto;
+}
+
+.pruebaMarcas {
+  border: none;
+  align-content: center;
+  justify-content: center;
+  height: 500px;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 280px 50px;
+}
+.pruebaMarcas h3 {
+  color: maroon;
+  font-family: cursive;
+  font-style: oblique;
+}
+.pruebaMarcas #mar1 {
+  border: none;
+  background-image: url(multimedia/tasteofthewild.jpg);
+  background-size: cover;
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+.pruebaMarcas #mar2 {
+  border: none;
+  background-image: url(multimedia/euk.jpg);
+  background-size: cover;
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+.pruebaMarcas #mar3 {
+  border: none;
+  background-image: url(multimedia/propp.jpg);
+  background-size: cover;
+  grid-column: 3/4;
+  grid-row: 1/3;
+}
+.pruebaMarcas #mar4 {
+  text-align: center;
+  font-family: cursive;
+  font-style: oblique;
+  border: none;
+  background-image: linear-gradient(to bottom, cornflowerblue, gray);
+  grid-column: 1/4;
+  grid-row: 3/4;
+}
+
+.footer--props {
+  color: maroon;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  background-color: whitesmoke;
+  background-size: cover;
+}
+.footer--props h2 {
+  font-size: 50px;
+  font-family: cursive;
+  font-style: oblique;
+  color: maroon;
+}
+.footer--props .footer_img--props {
+  height: 100px;
+  width: auto;
+}
+.footer--props .footer_redes--props {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.footer--props .footer_redes--props .so {
+  font-size: 50px;
+}
+.footer--props .footer_redes--props .so1 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.footer--props .footer_redes--props .so2 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.footer--props .footer_redes--props .so3 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.footer--props .footer_redes--props .so4 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.footer--props .footer_redes--props .so5 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.razas {
+  text-align: center;
+  margin-top: 165px;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#husky {
+  border: none;
+  height: 373px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: auto;
+}
+#husky .hu1 {
+  font-family: cursive;
+}
+#husky .hu1 h2 {
+  margin-top: 50px;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#husky .hu1 p {
+  font-size: 20px;
+  text-align: justify;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+#husky .hu2 {
+  background-image: url(multimedia/husky1.png);
+  background-size: cover;
+}
+
+#alaskan1 {
+  border: none;
+  height: 373px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: auto;
+}
+#alaskan1 .ala2 {
+  font-family: cursive;
+}
+#alaskan1 .ala2 h2 {
+  margin-top: 50px;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#alaskan1 .ala2 p {
+  font-size: 20px;
+  text-align: justify;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+#alaskan1 .ala1 {
+  background-image: url(multimedia/alaskanmalute.jpg);
+  background-size: cover;
+}
+
+#samoyedo1 {
+  border: none;
+  height: 373px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: auto;
+}
+#samoyedo1 .sam1 {
+  font-family: cursive;
+}
+#samoyedo1 .sam1 h2 {
+  margin-top: 50px;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#samoyedo1 .sam1 p {
+  font-size: 20px;
+  text-align: justify;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+#samoyedo1 .sam2 {
+  background-image: url(multimedia/samoyedo.jpg);
+  background-size: cover;
+}
+
+.trainingHusky {
+  text-align: center;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 165px;
+}
+.trainingHusky h2 {
+  margin-top: 10px;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#ejHusky {
+  border: 1px outset cornflowerblue;
+  border: none;
+  height: 500px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: auto;
+}
+#ejHusky .ejh1 {
+  font-family: cursive;
+}
+#ejHusky .ejh1 h3 {
+  margin-top: 10px;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#ejHusky .ejh1 p {
+  font-size: 20px;
+  text-align: justify;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+#ejHusky .ejh2 {
+  background-image: url(multimedia/rallyh.jpg);
+  background-size: cover;
+}
+
+#adHusky {
+  border: none;
+  height: 450px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: auto;
+}
+#adHusky .adh2 {
+  font-family: cursive;
+}
+#adHusky .adh2 h3 {
+  margin-top: 25px;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#adHusky .adh2 p {
+  font-size: 20px;
+  text-align: justify;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+#adHusky .adh1 {
+  background-image: url(multimedia/socialh.jpg);
+  background-size: cover;
+}
+
+.trainingAlaskan {
+  text-align: center;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.trainingAlaskan h2 {
+  margin-top: 10px;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#ejAlaskan {
+  border: none;
+  height: 450px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: auto;
+}
+#ejAlaskan .eja1 {
+  font-family: cursive;
+}
+#ejAlaskan .eja1 h3 {
+  margin-top: 30px;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#ejAlaskan .eja1 p {
+  font-size: 20px;
+  text-align: justify;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+#ejAlaskan .eja2 {
+  background-image: url(multimedia/trienoalas.jpg);
+  background-size: cover;
+}
+
+#adAlaskan {
+  border: none;
+  height: 450px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: auto;
+}
+#adAlaskan .ada2 {
+  font-family: cursive;
+}
+#adAlaskan .ada2 h3 {
+  margin-top: 25px;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#adAlaskan .ada2 p {
+  font-size: 20px;
+  text-align: justify;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+#adAlaskan .ada1 {
+  background-image: url(multimedia/socialal.jpg);
+  background-size: cover;
+}
+
+.trainingSamoyedo {
+  text-align: center;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.trainingSamoyedo h2 {
+  margin-top: 10px;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#ejSamoyedo {
+  border: none;
+  height: 373px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: auto;
+}
+#ejSamoyedo .ejs1 {
+  font-family: cursive;
+}
+#ejSamoyedo .ejs1 h3 {
+  margin-top: 35px;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+#ejSamoyedo .ejs1 p {
+  font-size: 20px;
+  text-align: justify;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+#ejSamoyedo .ejs2 {
+  background-image: url(multimedia/camina.jpg);
+  background-size: cover;
+}
+
+#aSamoyedo {
+  border: none;
+  height: 373px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: auto;
+}
+#aSamoyedo .as2 {
+  font-family: cursive;
+}
+#aSamoyedo .as2 h3 {
+  margin-top: 35px;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 55px;
+}
+#aSamoyedo .as2 p {
+  font-size: 20px;
+  text-align: justify;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+#aSamoyedo .as1 {
+  background-image: url(multimedia/samjug.jpg);
+  background-size: cover;
+}
+
+.quienes {
+  border: none;
+  margin-top: 165px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr;
+}
+.quienes .con1 {
+  font-family: cursive;
+}
+.quienes .con1 h2 {
+  margin-top: 30px;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.quienes .con1 p {
+  font-size: 20px;
+  text-align: justify;
+  padding: 0 20px;
+}
+.quienes .con2 {
+  background-image: url(multimedia/nordish.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 300px;
+}
+
+.aliment {
+  text-align: center;
+  margin-top: 165px;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#eukanuba {
+  border: none;
+  height: 373px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: auto;
+}
+#eukanuba .eu1 {
+  font-family: cursive;
+}
+#eukanuba .eu1 h2 {
+  margin-top: 40px;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#eukanuba .eu1 h5 {
+  margin-top: 20px;
+  font-size: 23px;
+  text-align: left;
+  margin-left: 100px;
+}
+#eukanuba .eu1 p {
+  font-size: 20px;
+  text-align: justify;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+#eukanuba .eu1 ol {
+  list-style: decimal;
+  text-align: left;
+  font-size: 20px;
+  margin-left: 100px;
+  list-style-position: inside;
+}
+#eukanuba .eu2 {
+  background-image: url(multimedia/kanuba.jpg);
+  background-size: cover;
+}
+
+#tasteofthe {
+  border: none;
+  height: 373px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: auto;
+}
+#tasteofthe .tw2 {
+  font-family: cursive;
+}
+#tasteofthe .tw2 h2 {
+  margin-top: 40px;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#tasteofthe .tw2 h5 {
+  margin-top: 20px;
+  font-size: 23px;
+  text-align: left;
+  margin-left: 100px;
+}
+#tasteofthe .tw2 p {
+  font-size: 20px;
+  text-align: justify;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+#tasteofthe .tw2 ol {
+  list-style: decimal;
+  text-align: left;
+  font-size: 20px;
+  margin-left: 100px;
+  list-style-position: inside;
+}
+#tasteofthe .tw1 {
+  background-image: url(multimedia/tow.jpg);
+  background-size: cover;
+}
+
+#proplan {
+  border: none;
+  height: 373px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: auto;
+}
+#proplan .pp1 {
+  font-family: cursive;
+}
+#proplan .pp1 h2 {
+  margin-top: 75px;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#proplan .pp1 h5 {
+  margin-top: 20px;
+  font-size: 23px;
+  text-align: left;
+  margin-left: 100px;
+}
+#proplan .pp1 p {
+  font-size: 20px;
+  text-align: justify;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+#proplan .pp1 ol {
+  list-style: decimal;
+  text-align: left;
+  font-size: 20px;
+  margin-left: 100px;
+  list-style-position: inside;
+}
+#proplan .pp2 {
+  background-image: url(multimedia/prop.jpeg);
+  background-size: cover;
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+  .sup {
+    height: auto;
+  }
+
+  .carou .carousel-item {
+    height: 180px;
+  }
+
+  .imagenTogo img {
+    display: block;
+    margin: auto;
+    width: 350px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .so {
+    font-size: 60px;
+  }
+
+  .pruebaMarcas {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 200px 30px;
+  }
+}
+@media (min-width: 320px) and (max-width: 425px) and (orientation: portrait) {
+  .sup {
+    height: auto;
+  }
+
+  .carou .carousel-item {
+    height: 150px;
+  }
+
+  .imagenTogo img {
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: auto;
+  }
+
+  .pruebaMarcas {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 200px 30px;
+  }
+
+  #mar4 h3 {
+    font-size: 20px;
+  }
+
+  .so {
+    font-size: 50px;
+  }
+
+  .quienes {
+    margin-top: 360px;
+    display: flex;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */
