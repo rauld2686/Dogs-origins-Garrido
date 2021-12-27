@@ -243,15 +243,17 @@ body{
         margin-bottom: 10px;
     }
 }
-#ejHusky{
-    border: 1px outset cornflowerblue;
-    border: none;
-    height: 500px;
-    width: 100%;
+.contenedorEjsiberiano{
+    margin-top: 10px;
     display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: auto;
-    .ejh1{
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "ejsiberiano imagenEjsiberiano";
+    height: 450px;
+    width: 100%;
+    .ejsiberiano{
+        grid-area: ejsiberiano;
         font-family: cursive;
         h3{
             margin-top: 10px;
@@ -267,38 +269,13 @@ body{
             margin-right: 100px;
         }
     }
-    .ejh2{
+    .imagenEjsiberiano{
+        grid-area: imagenEjsiberiano;
         background-image: url(multimedia/rallyh.jpg);
         background-size: cover;
     }
 }
-#adHusky{
-    border: none;
-    height: 450px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: auto;
-    .adh2{
-        font-family: cursive;
-        h3{
-            margin-top: 25px;
-            font-size: 25px;
-            text-align: center;
-            margin-bottom: 10px;
-        }
-        p{
-            font-size: 20px;
-            text-align: justify;
-            margin-left: 100px;
-            margin-right: 100px;
-        }
-    }
-    .adh1{
-        background-image: url(multimedia/socialh.jpg);
-        background-size: cover;
-    }
-}
+
 
 .trainingAlaskan{
     text-align: center;
@@ -306,20 +283,29 @@ body{
     padding-top: 5px;
     padding-bottom: 5px;
     h2{
-        margin-top: 10px;
+        margin-top: 250px;
         font-size: 25px;
         text-align: center;
         margin-bottom: 10px;
     }
 }
-#ejAlaskan{
-    border: none;
+
+.contenedorEjmalam{
+    
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "imagenEjmalam ejmalam";
     height: 450px;
     width: 100%;
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: auto;
-    .eja1{
+    .imagenEjmalam{
+        grid-area: imagenEjmalam;
+        background-image: url(multimedia/trienoalas.jpg);
+        background-size: cover;
+    }
+    .ejmalam{
+        grid-area: ejmalam;
         font-family: cursive;
         h3{
             margin-top: 30px;
@@ -334,38 +320,8 @@ body{
             margin-right: 100px;
         }
     }
-    .eja2{
-        background-image: url(multimedia/trienoalas.jpg);
-        background-size: cover;
-    }
 }
-#adAlaskan{
-    border: none;
-    height: 450px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: auto;
-    .ada2{
-        font-family: cursive;
-        h3{
-            margin-top: 25px;
-            font-size: 25px;
-            text-align: center;
-            margin-bottom: 10px;
-        }
-        p{
-            font-size: 20px;
-            text-align: justify;
-            margin-left: 100px;
-            margin-right: 100px;
-        }
-    }
-    .ada1{
-        background-image: url(multimedia/socialal.jpg);
-        background-size: cover;
-    }
-}
+
 
 .trainingSamoyedo{
     text-align: center;
@@ -373,20 +329,23 @@ body{
     padding-top: 5px;
     padding-bottom: 5px;
     h2{
-        margin-top: 10px;
+        margin-top: 180px;
         font-size: 25px;
         text-align: center;
         margin-bottom: 10px;
     }
 }
-#ejSamoyedo{
-    border: none;
-    height: 373px;
-    width: 100%;
+
+.contenedorEjsamoy{
     display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: auto;
-    .ejs1{
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "ejsamoy imagenEjsamoy";
+    height: 480px;
+    width: 100%;
+    .ejsamoy{
+        grid-area: ejsamoy;
         font-family: cursive;
         h3{
             margin-top: 35px;
@@ -401,36 +360,9 @@ body{
             margin-right: 100px;
         }
     }
-    .ejs2{
+    .imagenEjsamoy{
+        grid-area: imagenEjsamoy;
         background-image: url(multimedia/camina.jpg);
-        background-size: cover;
-    }
-}
-
-#aSamoyedo{
-    border: none;
-    height: 373px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: auto;
-    .as2{
-        font-family: cursive;
-        h3{
-            margin-top: 35px;
-            font-size: 25px;
-            text-align: center;
-            margin-bottom: 55px;
-        }
-        p{
-            font-size: 20px;
-            text-align: justify;
-            margin-left: 100px;
-            margin-right: 100px;
-        }
-    }
-    .as1{
-        background-image: url(multimedia/samjug.jpg);
         background-size: cover;
     }
 }
@@ -471,19 +403,23 @@ body{
 
 .aliment{
     text-align: center;
-    margin-top: 165px;
+    margin-top: 120px;
     border: none;
     padding-top: 5px;
     padding-bottom: 5px;
 }
-#eukanuba{
-    border: none;
-    height: 373px;
-    width: 100%;
+
+.contenedorEuka{
+    margin-top: 10px;
     display: grid;
     grid-template-columns: 60% 40%;
-    grid-template-rows: auto;
-    .eu1{
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "euka imagenEuka";
+    height: 373px;
+    width: 100%;
+    .euka{
+        grid-area: euka;
         font-family: cursive;
         h2{
             margin-top:40px;
@@ -511,20 +447,29 @@ body{
             list-style-position: inside;
         }
     }
-    .eu2{
+    .imagenEuka{
+        grid-area: imagenEuka;
         background-image: url(multimedia/kanuba.jpg);
         background-size: cover;
     }
 }
 
-#tasteofthe{
-    border: none;
-    height: 373px;
-    width: 100%;
+.contenedorTastew{
+    margin-top: 10px;
     display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: auto;
-    .tw2{
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "imagenTastew tastew";
+    height: 500px;
+    width: 100%;
+    .imagenTastew{
+        grid-area: imagenTastew;
+        background-image: url(multimedia/tow.jpg);
+        background-size: cover;
+    }
+    .tastew{
+        grid-area: tastew;
         font-family: cursive;
         h2{
             margin-top:40px;
@@ -552,20 +497,18 @@ body{
             list-style-position: inside;
         }
     }
-    .tw1{
-        background-image: url(multimedia/tow.jpg);
-        background-size: cover;
-    }
 }
-
-#proplan{
-    border: none;
-    height: 373px;
-    width: 100%;
+.contenedorPro{
+    margin-top: 10px;
     display: grid;
     grid-template-columns: 60% 40%;
-    grid-template-rows: auto;
-    .pp1{
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "pro imagenPro";
+    height: 373px;
+    width: 100%;
+    .pro{
+        grid-area: pro;
         font-family: cursive;
         h2{
             margin-top:75px;
@@ -593,7 +536,8 @@ body{
             list-style-position: inside;
         }
     }
-    .pp2{
+    .imagenPro{
+        grid-area: imagenPro;
         background-image: url(multimedia/prop.jpeg);
         background-size: cover;
     }
@@ -671,8 +615,8 @@ body{
             p{
                 font-size: 20px;
                 text-align: justify;
-                margin-left: 100px;
-                margin-right: 100px;
+                margin-left: 50px;
+                margin-right: 50px;
             }
         }
         .imagenSiberiano{
@@ -682,7 +626,7 @@ body{
         }
     }
     .contenedorMalam{
-        margin-top: 200px;
+        margin-top: 150px;
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 250px 200px ;
@@ -708,8 +652,8 @@ body{
             p{
                 font-size: 20px;
                 text-align: justify;
-                margin-left: 100px;
-                margin-right: 100px;
+                margin-left: 50px;
+                margin-right: 50px;
                 margin-bottom: 50px;
             }
         }
@@ -737,14 +681,256 @@ body{
             p{
                 font-size: 20px;
                 text-align: justify;
-                margin-left: 100px;
-                margin-right: 100px;
+                margin-left: 50px;
+                margin-right: 50px;
                 margin-bottom: 50px;
             }
         }
         .imagenSamoy{
             grid-area: imagenSamoy;
             background-image: url(multimedia/samoyedo.jpg);
+            background-size: cover;
+        }
+    }
+    .contenedorEuka{
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 450px 150px ;
+        grid-template-areas: 
+        "imagenEuka"
+        "euka";
+        height: 600px;
+        width: 100%;
+        .euka{
+            grid-area: euka;
+            font-family: cursive;
+            h2{
+                margin-top:40px;
+                font-size: 25px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            h5{
+                margin-top: 20px;
+                font-size: 23px;
+                text-align:left;
+                margin-left: 50px;
+            }
+            p{
+                font-size: 20px;
+                text-align: justify;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+            ol{
+                list-style:decimal;
+                text-align: left;
+                font-size: 20px;
+                margin-left: 50px;
+                list-style-position: inside;
+            }
+        }
+        .imagenEuka{
+            grid-area: imagenEuka;
+            background-image: url(multimedia/kanuba.jpg);
+            background-size: cover;
+        }
+    }
+    
+    .contenedorTastew{
+        margin-top: 200px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 450px 250px ;
+        grid-template-areas: 
+        "imagenTastew" 
+        "tastew";
+        height: 700px;
+        width: 100%;
+        .imagenTastew{
+            grid-area: imagenTastew;
+            background-image: url(multimedia/tow.jpg);
+            background-size: cover;
+        }
+        .tastew{
+            grid-area: tastew;
+            font-family: cursive;
+            h2{
+                margin-top:40px;
+                font-size: 25px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            h5{
+                margin-top: 20px;
+                font-size: 23px;
+                text-align:left;
+                margin-left: 50px;
+            }
+            p{
+                font-size: 20px;
+                text-align: justify;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+            ol{
+                list-style:decimal;
+                text-align: left;
+                font-size: 20px;
+                margin-left: 50px;
+                list-style-position: inside;
+            }
+        }
+    }
+    .contenedorPro{
+        margin-top: 200px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 350px 200px ;
+        grid-template-areas: 
+        "imagenPro"
+        "pro";
+        height: 700px;
+        width: 100%;
+        .pro{
+            grid-area: pro;
+            font-family: cursive;
+            h2{
+                margin-top:75px;
+                font-size: 25px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            h5{
+                margin-top: 20px;
+                font-size: 23px;
+                text-align:left;
+                margin-left: 50px;
+            }
+            p{
+                font-size: 20px;
+                text-align: justify;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+            ol{
+                list-style:decimal;
+                text-align: left;
+                font-size: 20px;
+                margin-left: 50px;
+                list-style-position: inside;
+            }
+        }
+        .imagenPro{
+            grid-area: imagenPro;
+            background-image: url(multimedia/prop.jpeg);
+            background-size: cover;
+        }
+    }
+    .contenedorEjsiberiano{
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 350px 300px ;
+        grid-template-areas: 
+        "imagenEjsiberiano"
+        "ejsiberiano";
+        height: 700px;
+        width: 100%;
+        .ejsiberiano{
+            grid-area: ejsiberiano;
+            font-family: cursive;
+            h3{
+                margin-top: 10px;
+                font-size: 25px;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            
+            p{
+                font-size: 20px;
+                text-align: justify;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+        }
+        .imagenEjsiberiano{
+            grid-area: imagenEjsiberiano;
+            background-image: url(multimedia/rallyh.jpg);
+            background-size: cover;
+        }
+    }
+    .trainingAlaskan{
+        h2{
+            margin-top: 600px;
+        }
+    }
+    .contenedorEjmalam{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 350px 300px ;
+        grid-template-areas: 
+        "imagenEjmalam" 
+        "ejmalam";
+        height: 850px;
+        width: 100%;
+        .imagenEjmalam{
+            grid-area: imagenEjmalam;
+            background-image: url(multimedia/trienoalas.jpg);
+            background-size: cover;
+        }
+        .ejmalam{
+            grid-area: ejmalam;
+            font-family: cursive;
+            h3{
+                margin-top: 30px;
+                font-size: 25px;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 20px;
+                text-align: justify;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+        }
+    }
+    .trainingSamoyedo{
+        h2{
+            margin-top: 450px;
+        }
+    }
+    .contenedorEjsamoy{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 350px 200px ;
+        grid-template-areas: 
+        "imagenEjsamoy"
+        "ejsamoy";
+        height: 800px;
+        width: 100%;
+        margin-bottom: 50px;
+        .ejsamoy{
+            grid-area: ejsamoy;
+            font-family: cursive;
+            h3{
+                margin-top: 35px;
+                font-size: 25px;
+                text-align: center;
+                margin-bottom: 45px;
+            }
+            p{
+                font-size: 20px;
+                text-align: justify;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+        }
+        .imagenEjsamoy{
+            grid-area: imagenEjsamoy;
+            background-image: url(multimedia/camina.jpg);
             background-size: cover;
         }
     }
@@ -777,7 +963,7 @@ body{
         grid-template-areas: 
         "imagenQuienes"
         "quienes";
-        height: 550px;
+        height: 650px;
         width: 100%;
         
         .imagenQuienes{
@@ -805,11 +991,11 @@ body{
         margin-top: 10px;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 200px 250px ;
+        grid-template-rows: 200px 300px ;
         grid-template-areas: 
         "imagenSiberiano"
         "siberiano";
-        height: 550px;
+        height: 600px;
         width: 100%;
         .siberiano{
             grid-area: siberiano;
@@ -823,8 +1009,8 @@ body{
             p{
                 font-size: 20px;
                 text-align: justify;
-                margin-left: 100px;
-                margin-right: 100px;
+                margin-left: 50px;
+                margin-right: 50px;
             }
         }
         .imagenSiberiano{
@@ -837,11 +1023,11 @@ body{
         margin-top: 200px;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 250px 200px ;
+        grid-template-rows: 250px 300px ;
         grid-template-areas: 
         "imagenMalam" 
         "malam";
-        height: 550px;
+        height: 750px;
         width: 100%;
         .imagenMalam{
             grid-area: imagenMalam;
@@ -860,8 +1046,8 @@ body{
             p{
                 font-size: 20px;
                 text-align: justify;
-                margin-left: 100px;
-                margin-right: 100px;
+                margin-left: 50px;
+                margin-right: 50px;
                 margin-bottom: 50px;
             }
         }
@@ -874,7 +1060,7 @@ body{
         grid-template-areas: 
         "imagenSamoy"
         "samoy";
-        height: 550px;
+        height: 650px;
         width: 100%;
         margin-bottom: 150px;
         .samoy{
@@ -889,14 +1075,256 @@ body{
             p{
                 font-size: 20px;
                 text-align: justify;
-                margin-left: 100px;
-                margin-right: 100px;
+                margin-left: 50px;
+                margin-right: 50px;
                 margin-bottom: 50px;
             }
         }
         .imagenSamoy{
             grid-area: imagenSamoy;
             background-image: url(multimedia/samoyedo.jpg);
+            background-size: cover;
+        }
+    }
+    .contenedorEuka{
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 200px 300px ;
+        grid-template-areas: 
+        "imagenEuka"
+        "euka";
+        height: 450px;
+        width: 100%;
+        .euka{
+            grid-area: euka;
+            font-family: cursive;
+            h2{
+                margin-top:40px;
+                font-size: 25px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            h5{
+                margin-top: 20px;
+                font-size: 23px;
+                text-align:left;
+                margin-left: 50px;
+            }
+            p{
+                font-size: 20px;
+                text-align: justify;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+            ol{
+                list-style:decimal;
+                text-align: left;
+                font-size: 20px;
+                margin-left: 50px;
+                list-style-position: inside;
+            }
+        }
+        .imagenEuka{
+            grid-area: imagenEuka;
+            background-image: url(multimedia/kanuba.jpg);
+            background-size: cover;
+        }
+    }
+    
+    .contenedorTastew{
+        margin-top: 200px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 250px 300px ;
+        grid-template-areas: 
+        "imagenTastew" 
+        "tastew";
+        height: 600px;
+        width: 100%;
+        .imagenTastew{
+            grid-area: imagenTastew;
+            background-image: url(multimedia/tow.jpg);
+            background-size: cover;
+        }
+        .tastew{
+            grid-area: tastew;
+            font-family: cursive;
+            h2{
+                margin-top:40px;
+                font-size: 25px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            h5{
+                margin-top: 20px;
+                font-size: 23px;
+                text-align:left;
+                margin-left: 50px;
+            }
+            p{
+                font-size: 20px;
+                text-align: justify;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+            ol{
+                list-style:decimal;
+                text-align: left;
+                font-size: 20px;
+                margin-left: 50px;
+                list-style-position: inside;
+            }
+        }
+    }
+    .contenedorPro{
+        margin-top: 200px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 250px 200px ;
+        grid-template-areas: 
+        "imagenPro"
+        "pro";
+        height: 700px;
+        width: 100%;
+        .pro{
+            grid-area: pro;
+            font-family: cursive;
+            h2{
+                margin-top:75px;
+                font-size: 25px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            h5{
+                margin-top: 20px;
+                font-size: 23px;
+                text-align:left;
+                margin-left: 50px;
+            }
+            p{
+                font-size: 20px;
+                text-align: justify;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+            ol{
+                list-style:decimal;
+                text-align: left;
+                font-size: 20px;
+                margin-left: 50px;
+                list-style-position: inside;
+            }
+        }
+        .imagenPro{
+            grid-area: imagenPro;
+            background-image: url(multimedia/prop.jpeg);
+            background-size: cover;
+        }
+    }
+    .contenedorEjsiberiano{
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 200px 300px ;
+        grid-template-areas: 
+        "imagenEjsiberiano"
+        "ejsiberiano";
+        height: 750px;
+        width: 100%;
+        .ejsiberiano{
+            grid-area: ejsiberiano;
+            font-family: cursive;
+            h3{
+                margin-top: 10px;
+                font-size: 25px;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            
+            p{
+                font-size: 20px;
+                text-align: justify;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+        }
+        .imagenEjsiberiano{
+            grid-area: imagenEjsiberiano;
+            background-image: url(multimedia/rallyh.jpg);
+            background-size: cover;
+        }
+    }
+    .trainingAlaskan{
+        h2{
+            margin-top: 600px;
+        }
+    }
+    .contenedorEjmalam{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 250px 300px ;
+        grid-template-areas: 
+        "imagenEjmalam" 
+        "ejmalam";
+        height: 850px;
+        width: 100%;
+        .imagenEjmalam{
+            grid-area: imagenEjmalam;
+            background-image: url(multimedia/trienoalas.jpg);
+            background-size: cover;
+        }
+        .ejmalam{
+            grid-area: ejmalam;
+            font-family: cursive;
+            h3{
+                margin-top: 30px;
+                font-size: 25px;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 20px;
+                text-align: justify;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+        }
+    }
+    .trainingSamoyedo{
+        h2{
+            margin-top: 500px;
+        }
+    }
+    .contenedorEjsamoy{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 250px 200px ;
+        grid-template-areas: 
+        "imagenEjsamoy"
+        "ejsamoy";
+        height: 800px;
+        width: 100%;
+        margin-bottom: 100px;
+        .ejsamoy{
+            grid-area: ejsamoy;
+            font-family: cursive;
+            h3{
+                margin-top: 35px;
+                font-size: 25px;
+                text-align: center;
+                margin-bottom: 45px;
+            }
+            p{
+                font-size: 20px;
+                text-align: justify;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+        }
+        .imagenEjsamoy{
+            grid-area: imagenEjsamoy;
+            background-image: url(multimedia/camina.jpg);
             background-size: cover;
         }
     }
