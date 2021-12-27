@@ -115,92 +115,103 @@ body {
 
 .razas {
   text-align: center;
-  margin-top: 165px;
+  margin-top: 145px;
   border: none;
   padding-top: 5px;
   padding-bottom: 5px;
 }
 
-#husky {
-  border: none;
-  height: 373px;
-  width: 100%;
+.contenedorSiberiano {
+  margin-top: 10px;
   display: grid;
   grid-template-columns: 60% 40%;
-  grid-template-rows: auto;
+  grid-template-rows: 1fr;
+  grid-template-areas: "siberiano imagenSiberiano";
+  height: 373px;
+  width: 100%;
 }
-#husky .hu1 {
+.contenedorSiberiano .siberiano {
+  grid-area: siberiano;
   font-family: cursive;
 }
-#husky .hu1 h2 {
+.contenedorSiberiano .siberiano h2 {
   margin-top: 50px;
   font-size: 25px;
   text-align: center;
   margin-bottom: 50px;
 }
-#husky .hu1 p {
+.contenedorSiberiano .siberiano p {
   font-size: 20px;
   text-align: justify;
   margin-left: 100px;
   margin-right: 100px;
 }
-#husky .hu2 {
+.contenedorSiberiano .imagenSiberiano {
+  grid-area: imagenSiberiano;
   background-image: url(multimedia/husky1.png);
   background-size: cover;
 }
 
-#alaskan1 {
-  border: none;
+.contenedorMalam {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "imagenMalam malam";
   height: 373px;
   width: 100%;
-  display: grid;
-  grid-template-columns: 40% 60%;
-  grid-template-rows: auto;
 }
-#alaskan1 .ala2 {
-  font-family: cursive;
-}
-#alaskan1 .ala2 h2 {
-  margin-top: 50px;
-  font-size: 25px;
-  text-align: center;
-  margin-bottom: 50px;
-}
-#alaskan1 .ala2 p {
-  font-size: 20px;
-  text-align: justify;
-  margin-left: 100px;
-  margin-right: 100px;
-}
-#alaskan1 .ala1 {
+.contenedorMalam .imagenMalam {
+  grid-area: imagenMalam;
   background-image: url(multimedia/alaskanmalute.jpg);
   background-size: cover;
 }
-
-#samoyedo1 {
-  border: none;
-  height: 373px;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 60% 40%;
-  grid-template-rows: auto;
-}
-#samoyedo1 .sam1 {
+.contenedorMalam .malam {
+  grid-area: malam;
   font-family: cursive;
 }
-#samoyedo1 .sam1 h2 {
+.contenedorMalam .malam h2 {
   margin-top: 50px;
   font-size: 25px;
   text-align: center;
   margin-bottom: 50px;
 }
-#samoyedo1 .sam1 p {
+.contenedorMalam .malam p {
   font-size: 20px;
   text-align: justify;
   margin-left: 100px;
   margin-right: 100px;
+  margin-bottom: 50px;
 }
-#samoyedo1 .sam2 {
+
+.contenedorSamoy {
+  margin-top: 110px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "samoy imagenSamoy";
+  height: 373px;
+  width: 100%;
+}
+.contenedorSamoy .samoy {
+  grid-area: samoy;
+  font-family: cursive;
+}
+.contenedorSamoy .samoy h2 {
+  margin-top: 50px;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.contenedorSamoy .samoy p {
+  font-size: 20px;
+  text-align: justify;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 50px;
+}
+.contenedorSamoy .imagenSamoy {
+  grid-area: imagenSamoy;
   background-image: url(multimedia/samoyedo.jpg);
   background-size: cover;
 }
@@ -414,31 +425,31 @@ body {
   background-size: cover;
 }
 
-.contenedorQuien {
+.contenedorQuienes {
   margin-top: 117px;
   display: grid;
   grid-template-columns: 60% 40%;
   grid-template-rows: 1fr;
-  grid-template-areas: "quien imagenQuien";
+  grid-template-areas: "quienes imagenQuienes";
   height: 300px;
   width: 100%;
 }
-.contenedorQuien .imagenQuien {
-  grid-area: imagenQuien;
+.contenedorQuienes .imagenQuienes {
+  grid-area: imagenQuienes;
   background-image: url(multimedia/nieves.jpg);
   background-size: cover;
 }
-.contenedorQuien .quien {
-  grid-area: quien;
+.contenedorQuienes .quienes {
+  grid-area: quienes;
   font-family: cursive;
 }
-.contenedorQuien .quien h2 {
+.contenedorQuienes .quienes h2 {
   margin-top: 30px;
   font-size: 25px;
   text-align: center;
   margin-bottom: 40px;
 }
-.contenedorQuien .quien p {
+.contenedorQuienes .quienes p {
   font-size: 20px;
   text-align: justify;
   padding: 0 20px;
@@ -596,34 +607,130 @@ body {
     font-size: 60px;
   }
 
-  .contenedorQuien {
+  .contenedorQuienes {
     margin-top: 117px;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 200px 200px;
-    grid-template-areas: "imagenQuien" "quien";
+    grid-template-areas: "imagenQuienes" "quienes";
     height: 550px;
     width: 100%;
   }
-  .contenedorQuien .imagenQuien {
-    grid-area: imagenQuien;
+  .contenedorQuienes .imagenQuienes {
+    grid-area: imagenQuienes;
     background-image: url(multimedia/nieves.jpg);
     background-size: cover;
   }
-  .contenedorQuien .quien {
-    grid-area: quien;
+  .contenedorQuienes .quienes {
+    grid-area: quienes;
     font-family: cursive;
   }
-  .contenedorQuien .quien h2 {
+  .contenedorQuienes .quienes h2 {
     margin-top: 30px;
     font-size: 25px;
     text-align: center;
     margin-bottom: 40px;
   }
-  .contenedorQuien .quien p {
+  .contenedorQuienes .quienes p {
     font-size: 20px;
     text-align: justify;
     padding: 0 20px;
+  }
+
+  .contenedorSiberiano {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 250px;
+    grid-template-areas: "imagenSiberiano" "siberiano";
+    height: 550px;
+    width: 100%;
+  }
+  .contenedorSiberiano .siberiano {
+    grid-area: siberiano;
+    font-family: cursive;
+  }
+  .contenedorSiberiano .siberiano h2 {
+    margin-top: 50px;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .contenedorSiberiano .siberiano p {
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .contenedorSiberiano .imagenSiberiano {
+    grid-area: imagenSiberiano;
+    background-image: url(multimedia/husky1.png);
+    background-size: cover;
+  }
+
+  .contenedorMalam {
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 250px 200px;
+    grid-template-areas: "imagenMalam" "malam";
+    height: 550px;
+    width: 100%;
+  }
+  .contenedorMalam .imagenMalam {
+    grid-area: imagenMalam;
+    background-image: url(multimedia/alaskanmalute.jpg);
+    background-size: cover;
+  }
+  .contenedorMalam .malam {
+    grid-area: malam;
+    font-family: cursive;
+  }
+  .contenedorMalam .malam h2 {
+    margin-top: 50px;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .contenedorMalam .malam p {
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+  }
+
+  .contenedorSamoy {
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 250px 200px;
+    grid-template-areas: "imagenSamoy" "samoy";
+    height: 550px;
+    width: 100%;
+    margin-bottom: 150px;
+  }
+  .contenedorSamoy .samoy {
+    grid-area: samoy;
+    font-family: cursive;
+  }
+  .contenedorSamoy .samoy h2 {
+    margin-top: 50px;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .contenedorSamoy .samoy p {
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+  }
+  .contenedorSamoy .imagenSamoy {
+    grid-area: imagenSamoy;
+    background-image: url(multimedia/samoyedo.jpg);
+    background-size: cover;
   }
 }
 @media (min-width: 320px) and (max-width: 425px) and (orientation: portrait) {
@@ -646,33 +753,129 @@ body {
     font-size: 50px;
   }
 
-  .contenedorQuien {
+  .contenedorQuienes {
     margin-top: 117px;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 200px 200px;
-    grid-template-areas: "imagenQuien" "quien";
+    grid-template-areas: "imagenQuienes" "quienes";
     height: 550px;
     width: 100%;
   }
-  .contenedorQuien .imagenQuien {
-    grid-area: imagenQuien;
+  .contenedorQuienes .imagenQuienes {
+    grid-area: imagenQuienes;
     background-image: url(multimedia/nieves.jpg);
     background-size: cover;
   }
-  .contenedorQuien .quien {
-    grid-area: quien;
+  .contenedorQuienes .quienes {
+    grid-area: quienes;
     font-family: cursive;
   }
-  .contenedorQuien .quien h2 {
+  .contenedorQuienes .quienes h2 {
     margin-top: 30px;
     font-size: 25px;
     text-align: center;
     margin-bottom: 40px;
   }
-  .contenedorQuien .quien p {
+  .contenedorQuienes .quienes p {
     font-size: 20px;
     text-align: justify;
     padding: 0 20px;
+  }
+
+  .contenedorSiberiano {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 250px;
+    grid-template-areas: "imagenSiberiano" "siberiano";
+    height: 550px;
+    width: 100%;
+  }
+  .contenedorSiberiano .siberiano {
+    grid-area: siberiano;
+    font-family: cursive;
+  }
+  .contenedorSiberiano .siberiano h2 {
+    margin-top: 50px;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .contenedorSiberiano .siberiano p {
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .contenedorSiberiano .imagenSiberiano {
+    grid-area: imagenSiberiano;
+    background-image: url(multimedia/husky1.png);
+    background-size: cover;
+  }
+
+  .contenedorMalam {
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 250px 200px;
+    grid-template-areas: "imagenMalam" "malam";
+    height: 550px;
+    width: 100%;
+  }
+  .contenedorMalam .imagenMalam {
+    grid-area: imagenMalam;
+    background-image: url(multimedia/alaskanmalute.jpg);
+    background-size: cover;
+  }
+  .contenedorMalam .malam {
+    grid-area: malam;
+    font-family: cursive;
+  }
+  .contenedorMalam .malam h2 {
+    margin-top: 50px;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .contenedorMalam .malam p {
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+  }
+
+  .contenedorSamoy {
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 250px 200px;
+    grid-template-areas: "imagenSamoy" "samoy";
+    height: 550px;
+    width: 100%;
+    margin-bottom: 150px;
+  }
+  .contenedorSamoy .samoy {
+    grid-area: samoy;
+    font-family: cursive;
+  }
+  .contenedorSamoy .samoy h2 {
+    margin-top: 50px;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .contenedorSamoy .samoy p {
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+  }
+  .contenedorSamoy .imagenSamoy {
+    grid-area: imagenSamoy;
+    background-image: url(multimedia/samoyedo.jpg);
+    background-size: cover;
   }
 }/*# sourceMappingURL=style.css.map */
