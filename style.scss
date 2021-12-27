@@ -76,54 +76,6 @@ body{
         height: auto;
     }
 }
-.pruebaMarcas{
-    border: none;
-    align-content: center;
-    justify-content: center;
-    height: 500px;
-    width: 100%;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 200px 200px 200px;
-    grid-template-rows: 280px 50px;
-    h3{
-        color: maroon;
-        font-family: cursive;
-        font-style: oblique;
-    }
-    #mar1{
-        border: none;
-        background-image: url(multimedia/tasteofthewild.jpg);
-        background-size: cover;
-        grid-column: 1/2;
-        grid-row: 1/3;
-    }
-    #mar2{
-        border: none;
-        background-image: url(multimedia/euk.jpg);
-        background-size: cover;
-        grid-column: 2/3;
-        grid-row: 1/3;
-        
-    }
-    #mar3{
-        border: none;
-        background-image: url(multimedia/propp.jpg);
-        background-size: cover;
-        grid-column: 3/4;
-        grid-row: 1/3;
-        
-    }
-    #mar4{
-        text-align: center;
-        font-family: cursive;
-        font-style: oblique;
-        border: none;
-        background-image: linear-gradient(to bottom, cornflowerblue, gray);
-        grid-column: 1/4;
-        grid-row: 3/4;
-    }
-}
 .card-group{
     .card{
         .card-img-top{
@@ -163,27 +115,10 @@ body{
         justify-content: center;
         .so{
             font-size: 50px;
-        }
-        .so1{
             padding-left: 10px;
             padding-right: 10px;
         }
-        .so2{
-            padding-left: 10px;
-            padding-right: 10px;
-        }
-        .so3{
-            padding-left: 10px;
-            padding-right: 10px;
-        }
-        .so4{
-            padding-left: 10px;
-            padding-right: 10px;
-        }
-        .so5{
-            padding-left: 10px;
-            padding-right: 10px;
-        }
+        
     }
 }
 
@@ -487,7 +422,36 @@ body{
     }
 }
 
-
+.contenedorQuien{
+    margin-top: 117px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "quien imagenQuien";
+    height: 300px;
+    width: 100%;
+    .imagenQuien{
+        grid-area: imagenQuien;
+        background-image: url(multimedia/nieves.jpg);
+        background-size: cover;
+    }
+    .quien{
+        grid-area: quien;
+        font-family: cursive;
+        h2{
+            margin-top: 30px;
+            font-size: 25px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        p{
+            font-size: 20px;
+            text-align: justify;
+            padding: 0 20px;
+        }
+    }
+}
 .quienes{
     border: none;
     margin-top: 165px;
@@ -659,7 +623,7 @@ body{
             height: 180px;
         }
     }
-    .imagenTogo img{
+    .histo .imagenTogo img{
         display: block;
         margin: auto;
         width: 350px;
@@ -669,10 +633,36 @@ body{
     .so{
         font-size: 60px;
     }
-    .pruebaMarcas{
+    .contenedorQuien{
+        margin-top: 117px;
         display: grid;
-        grid-template-columns: 100px 100px 100px;
-        grid-template-rows: 200px 30px;
+        grid-template-columns: 100%;
+        grid-template-rows: 200px 200px ;
+        grid-template-areas: 
+        "imagenQuien"
+        "quien";
+        height: 550px;
+        width: 100%;
+        .imagenQuien{
+            grid-area: imagenQuien;
+            background-image: url(multimedia/nieves.jpg);
+            background-size: cover;
+        }
+        .quien{
+            grid-area: quien;
+            font-family: cursive;
+            h2{
+                margin-top: 30px;
+                font-size: 25px;
+                text-align: center;
+                margin-bottom: 40px;
+            }
+            p{
+                font-size: 20px;
+                text-align: justify;
+                padding: 0 20px;
+            }
+        }
     }
 }
 
@@ -686,26 +676,45 @@ body{
             height: 150px;
         }
     }
-    .imagenTogo img{
+    .histo .imagenTogo img{
         display: block;
         margin: auto;
         width: 100px;
         height: auto;
     }
-    .pruebaMarcas{
-        display: grid;
-        grid-template-columns: 100px 100px 100px;
-        grid-template-rows: 200px 30px;
-    }
-    #mar4 h3{
-        font-size: 20px;
-    }
     .so{
         font-size: 50px;
     }
-    .quienes{
-        margin-top: 360px;
-        display: flex;
-        flex-direction: column;
+    .contenedorQuien{
+        margin-top: 117px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 200px 200px ;
+        grid-template-areas: 
+        "imagenQuien"
+        "quien";
+        height: 550px;
+        width: 100%;
+        
+        .imagenQuien{
+            grid-area: imagenQuien;
+            background-image: url(multimedia/nieves.jpg);
+            background-size: cover;
+        }
+        .quien{
+            grid-area: quien;
+            font-family: cursive;
+            h2{
+                margin-top: 30px;
+                font-size: 25px;
+                text-align: center;
+                margin-bottom: 40px;
+            }
+            p{
+                font-size: 20px;
+                text-align: justify;
+                padding: 0 20px;
+            }
+        }
     }
 }
