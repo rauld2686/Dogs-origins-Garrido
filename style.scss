@@ -452,34 +452,6 @@ body{
         }
     }
 }
-.quienes{
-    border: none;
-    margin-top: 165px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: 1fr;
-    .con1{
-        font-family: cursive;
-        h2{
-            margin-top: 30px;
-            font-size: 25px;
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        p{
-            font-size: 20px;
-            text-align: justify;
-            padding: 0 20px;
-        }
-    }
-    .con2{
-        background-image: url(multimedia/nordish.jpg);
-        background-size:contain;
-        background-repeat: no-repeat;
-        height: 300px;
-    }
-}
 
 
 //alimentos //
