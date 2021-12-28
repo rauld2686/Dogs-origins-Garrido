@@ -574,7 +574,7 @@ body {
     grid-template-columns: 100%;
     grid-template-rows: 200px 250px;
     grid-template-areas: "imagenSiberiano" "siberiano";
-    height: 550px;
+    height: 620px;
     width: 100%;
   }
   .contenedorSiberiano .siberiano {
@@ -605,7 +605,7 @@ body {
     grid-template-columns: 100%;
     grid-template-rows: 250px 200px;
     grid-template-areas: "imagenMalam" "malam";
-    height: 550px;
+    height: 620px;
     width: 100%;
   }
   .contenedorMalam .imagenMalam {
