@@ -230,6 +230,54 @@ body {
   margin-bottom: 10px;
 }
 
+
+.titulo{
+  text-align: center;
+  font-size: 40px;
+  margin-top: 145px;
+}
+#contenedor-calculadora {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 35% 65%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "questions resum";
+  height: 373px;
+  width: 100%;
+}
+#contenedor-calculadora .questions {
+  grid-area: questions;
+  font-family: cursive;
+  background: rgb(0, 0, 0, 0.2);
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 20px;
+}
+#contenedor-calculadora .questions .input {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  border-style: groove;
+}
+#contenedor-calculadora .questions button{
+  color: white;
+  background-color:darkslategrey;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+
+#contenedor-calculadora .resum {
+  grid-area: resum;
+  background-image: url(multimedia/silueta.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .contenedorEjsiberiano {
   margin-top: 10px;
   display: grid;
